@@ -41,6 +41,12 @@ html {
 
 a {
     text-decoration: none;
+    color: var(--primary-solid-white);
+    font-size: var(--font-12px);
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    text-align: center;
 }
 
 ul, ol {
@@ -78,13 +84,7 @@ ul, ol {
         gap: 1em;
         margin: 0 auto;
         margin-top: 10px;
-        
-        color: var(--primary-solid-white);
-        font-size: var(--font-12px);
-        font-weight: 500;
-        text-transform: uppercase;
-        line-height: 1.2em;
-        text-align: center;
+
     }
 
     .slider__body {
@@ -175,7 +175,7 @@ ul, ol {
         width: 100%;
         min-width: 360px;
         padding-top: 22px;
-        
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -196,3 +196,127 @@ ul, ol {
         padding-top: 5px;
         margin-bottom: 7.5px;
     }
+
+    /* Titles section styles ends here*/
+    /* Step by step section styles starts here*/
+
+    .step-menu-container {
+        width: 100%;
+        min-width: 360px;
+
+        font-size: var(--font-12px);
+        font-weight: 400;
+        font-weight: 1.32rem;
+        text-align: center;
+    }
+
+    .step-by-step-container {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    .step-container{
+        display: grid;
+        grid-auto-rows: 1fr;
+    }
+
+    .step-icon {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        justify-self: center;
+    }
+
+    .step-container p {
+        margin-top: 5px;
+    }
+
+    .step__checked {
+        background-image: url('../assets/icons/002_step-by-step_icon_1.png');
+    }
+
+    .step__current {
+        background-image: url('../assets/icons/002_step-by-step_icon_2.png');
+    }
+
+    .step__working {
+        background-image: url('../assets/icons/002_step-by-step_icon_3.png');
+    }
+
+    /* Step by step section styles ends here*/
+    /* Product info section styles starts here*/
+
+
+
+
+
+
+
+
+
+    /* Product info section styles ends here*/
+/* Main section styles ends here*/
+/* Footer section styles starts here*/
+
+    .footer-container {
+        width: 100%;
+        height: auto;
+        min-width: 360px;
+        margin-top: 25px;
+        padding: 16px 0;
+        background-color: var(--primary-solid-grey);
+        color: var(--primary-solid-white);
+        font-size: var(--font-12px);
+        font-weight: 400;
+        line-height: 1.68rem;
+        text-align: center;
+    }
+
+    .footer-info-container {
+        width: 90%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .footer-info-container .right-container {
+        display: flex;
+        justify-content: stretch;
+        
+        margin: 0 auto;
+    }
+
+    .footer-info-container .right-container .right-icon {
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        background-image: url('../assets/icons/003_footer_icon_1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        place-self: center;
+    }
+
+    .footer-info-container p {
+        display: inline-block;
+        padding: 8px 0;
+        padding-left: 10px;
+
+    }
+
+/* Footer section styles ends here*/
+
+@media (min-width: 768px) {
+    
+}
