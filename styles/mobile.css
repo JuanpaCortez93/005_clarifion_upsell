@@ -1,0 +1,198 @@
+/* Start Variables */
+
+:root {
+
+    /* Pallete */
+    --primary-solid-black: #000000;
+    --primary-solid-grey: #4D5254;
+    --primary-solid-white: white;
+
+    --secondary-solid-blue: #2C7EF8;
+    --secondary-solid-green: #59AE43;     
+
+    /* Typography */
+    --manrope-font: 'Manrope', sans-serif;
+
+    /* Font-size */
+    --font-32px: 3.2em;
+    --font-24px: 2.4em;
+    --font-16px: 1.6em;
+    --font-14px: 1.4em;
+    --font-12px: 1.2em;
+    --font-10px: 1em;  
+
+}
+
+/* End Variables */
+
+/* Start styles normalization*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: var(--manrope-font);
+    font-size: 62.5%;
+    color: var(--just-black);  
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+
+/* End styles normalization*/
+/* Header styles starts here*/
+
+    /* Slider container styles starts here*/
+
+    .header-main-container {
+        width: 100%;
+        min-width: 360px;
+        height: 102px;  
+        max-height: 1500px;
+    }
+
+    .slider {
+        width: 100%;
+        height: 42px;
+        overflow: hidden;
+
+        background-color: var(--primary-solid-grey);
+
+    }
+
+    .slider__container {
+        width: 90%;
+        
+        display: grid;
+        grid-template-columns: 50px 1fr 50px;
+        justify-content: center;
+        gap: 1em;
+        margin: 0 auto;
+        margin-top: 10px;
+        
+        color: var(--primary-solid-white);
+        font-size: var(--font-12px);
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        text-align: center;
+    }
+
+    .slider__body {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1.5s;
+
+        display: grid;
+        grid-template-columns: 30px max-content;
+        justify-content: center;
+        place-items: center;
+
+    }
+
+    .slider__body--show {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .slider__arrow {
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .slider__arrow:nth-child(2) {
+        justify-self: end;
+    }
+
+    .slider__icon {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: 5px;
+    }
+
+    .icon-1 {
+        background-image: url('../assets/icons/001_header_icon_1.png');
+    }
+
+    .icon-2 {
+        background-image: url('../assets/icons/001_header_icon_2.png');
+    }
+
+    .icon-3 {
+        background-image: url('../assets/icons/001_header_icon_3.png');
+    }
+
+    .icon-4 {
+        background-image: url('../assets/icons/001_header_icon_4.png');
+    }
+
+    /* Slider container styles ends here*/  
+    /* Image container styles starts here*/
+
+    .header-images {
+        width: 100%;
+        min-width: 360px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-container img {
+        width: 106px;
+        height: 20px;
+        margin: 15px 0 60px 20px;
+    }
+
+    .partners-container img {
+        width: 44px;
+        height: 16px;
+        margin: 15px 20px 60px 0;
+    }
+
+    /* Image container styles ends here*/
+
+
+/* Header styles ends here*/
+/* Main styles starts here*/
+
+    /* Titles section styles starts here*/
+    .title-container {
+        width: 100%;
+        min-width: 360px;
+        padding-top: 22px;
+        
+        text-align: center;
+    }
+
+    .title-container h1 {
+        font-size: var(--font-32px);
+        font-weight: 400;
+        line-height: 4.48rem;
+        letter-spacing: 0.01px;
+        color: var(--primary-solid-black);
+    }
+
+    .title-container h3 {
+        font-size: var(--font-16px);
+        font-weight: 400;
+        line-height: 2.24rem;
+        color: var(--primary-solid-grey);
+
+        padding-top: 5px;
+        margin-bottom: 7.5px;
+    }
