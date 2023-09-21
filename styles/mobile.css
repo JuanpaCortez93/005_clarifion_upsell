@@ -311,6 +311,147 @@ ul, ol {
         }
 
     /* Product image ends here */
+    /* Product features ends here */
+        .product-features {
+            width: 100%;
+            min-width: 320px;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-columns: 3;
+            margin-top: 10px;
+        }
+
+        .features-stock-price {
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 80px;
+
+            margin-top: 20px;
+        }
+
+
+        .features-stock-price .stock-info {
+            width: 100%;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .features-stock-price .stock-info .stock-info-name p {
+            font-size: var(--font-14px);
+            font-weight: 400;
+            line-height: 1.96rem;
+            color: var(--primary-solid-black);
+        }
+
+        .features-stock-price .stock-info .stock-info-stars, .stock-remaining {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .features-stock-price .stock-info .stock-info-stars img{
+            width: 68px;
+            height: 12px;
+        }
+
+        .stock-remaining .stock-remaining__item {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+
+            background-image: url('../assets/images/002_product_left.png');
+            margin-right: 12px;
+        }
+
+        .features-stock-price .stock-prices {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: start;
+            justify-content: end;
+        }
+
+        .features-stock-price .stock-prices .normal-price {
+            font-size: var(--font-10px);
+            font-weight: 600;
+            line-height: 1.96rem;
+            color: var(--primary-solid-grey);
+            text-decoration: line-through;
+            
+            margin-top: 1px;
+            margin-right: 10px;
+        }
+
+        .features-stock-price .stock-prices .discount-price {
+            font-size: var(--font-14px);
+            font-weight: 600;
+            line-height: 1.96rem;
+            color: var(--secondary-solid-blue);
+            text-decoration: line-through;
+        }
+
+        .features-stock-price .stock-image img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+
+        .features-main-characteristic {
+            margin-top: 10px;
+        }
+
+        .features-main-characteristic p {
+            font-size: var(--font-12px);
+            font-weight: 400;
+            line-height: 1.68rem;
+            text-align: center;
+        }
+
+        .features-another-characteristics {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1;
+            grid-template-rows: 3;
+        }
+
+        .features-another-characteristics .another__characteristic {
+            display: flex;
+            margin: 10px 0;
+        }
+
+        .features-another-characteristics .another__characteristic p {
+            font-size: var(--font-12px);
+            font-weight: 400;
+            line-height: 1.92rem;
+            color: var(--primary-solid-grey);
+            align-self: center;
+        }
+
+        .features-another-characteristics .another__characteristic b {
+            font-weight: 700;
+        }
+
+        .features-another-characteristics .another__characteristic img {
+            margin-right: 10px;
+            height: 16px;
+            width: 16px;
+            margin-top: 2px;
+        }
+
+
+
+        
+
+
+
     /* Product discount info ends here */
         .product-save-money {
             width: 100%;
@@ -332,14 +473,15 @@ ul, ol {
 
         .save-money-info .money-info__icon {
             display: inline-block;
-            width: 24px;
-            height: 24px;
+            width: 36px;
+            height: 36px;
             background-image: url('../assets/icons/004_main_percent.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             align-self: center;
             margin-left: 30px;
+            margin-right: 10px;
         }
 
         .save-money-info p {
