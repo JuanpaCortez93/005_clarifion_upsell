@@ -1,0 +1,425 @@
+@media (min-width: 1024px) {
+
+    /* Titles section styles starts here*/
+    
+    .title-container {
+        margin-bottom: 50px;
+    }
+    
+    .title-container h1 {
+        font-size: var(--font-48px);
+        font-weight: 400;
+        line-height: 4.8rem;
+    }
+    
+    .title-container h3 {
+        font-size: var(--font-24px);
+        line-height: 2.4rem;
+    }
+    
+    .slider__container {       
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .slider__body {
+        opacity: 1;
+    }
+    
+    .slider__arrow {
+        display: none;
+        opacity: 0;
+        cursor: none;
+    }
+    
+    /* Titles section styles ends here*/
+    /* Step by step section styles starts here*/
+
+    .step-container p {
+        font-size: var(--font-20px);
+    }
+
+    /* Step by step section styles ends here*/
+    /*Product container starts here*/
+    
+        .product-main-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+            margin-top: 40px;
+        }
+    
+        .product-image {
+            grid-row:  1/4;
+            grid-column: 1/2;
+            width: 100%;
+            height: 100%;
+    
+            position: relative;
+        }
+    
+        .product-image img {
+            width: 100%;
+            height: 85%;
+            position: absolute;
+            left: calc(1%);
+            top: 20px;
+        }
+    
+        /* Product info discount starts here */
+    
+            .product-discount h2 {
+                text-align: start;
+                font-size: var(--font-32px);
+                font-weight: 400;
+                line-height: 4.48rem;
+            }
+    
+            .discount__blue {
+                font-weight: 600;
+            }
+    
+        /* Product info discount ends here */
+        /* Product features ends here */
+        .product-features {
+            width: 88%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+    
+        .features-stock-price {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            margin: 0 auto;
+        }
+    
+        .features-stock-price .stock-info {
+            margin-left: 10px;
+        }
+    
+        .features-stock-price .stock-info .stock-info-name p {
+            font-size: var(--font-20px);
+            font-weight: 400;
+            line-height: 2.8rem;
+            color: var(--primary-solid-black);
+        }
+    
+        .stock-remaining p {
+            font-size: var(--font-16px);
+            font-weight: 300;
+            line-height: 2.186rem;
+        }
+    
+        .stock-remaining .stock-remaining__item {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+    
+            background-repeat: no-repeat;
+        }
+    
+        .features-stock-price .stock-prices .normal-price {
+            font-size: var(--font-16px);
+            line-height: 2.186rem;
+            margin-top: 6px;
+        }
+    
+        .features-stock-price .stock-prices .discount-price {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 3.08rem;
+        }
+    
+        .features-stock-price .stock-image img {
+            width: 88px;
+            height: 88px;
+        }
+    
+    
+        .features-main-characteristic {
+            margin-top: 30px;
+        }
+    
+        .features-main-characteristic p {
+            font-size: var(--font-16px);
+            line-height: 2.24rem;
+            text-align: start;
+        }
+    
+        .features-another-characteristics {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        .features-another-characteristics .another__characteristic p {
+            font-size: var(--font-16px);
+            font-weight: 400;
+            line-height: 2.56rem;
+        }
+    
+        .features-another-characteristics .another__characteristic b {
+            font-weight: 400;
+        }
+    
+        .features-another-characteristics .another__characteristic img {
+            height: 22px;
+            width: 22px;
+        }
+        
+        /* Product features info ends here */
+    
+       /* Product save money starts here */
+        
+       .product-save-money {
+            width: 88%;
+            margin: 0 auto;
+            grid-row:  3/4;
+            grid-column: 2/3;
+        }
+    
+        .save-money-info .money-info__icon {
+            width: 32px;
+            height: 32px;
+        }
+    
+        .save-money-info p {
+            font-size: var(--font-16px);
+            line-height: 2.24rem;
+        }
+    
+        .save-money-get-discount {
+    
+            text-align: center;
+            font-size: var(--font-16px);
+            font-weight: 700;
+            line-height: 2.732rem;
+    
+            margin-bottom: 20px;
+    
+        }
+    
+        .save-money-payment {
+            margin: 10px 0;
+        }
+    
+        .save-money-reject a {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2.459rem;
+        }
+        /* Product discount info ends here */
+    
+        .product-quality {
+            grid-row:  4/5;
+            grid-column: 2/3;
+        }
+    
+        .product-quality {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            
+        }
+    
+        /* Product quality starts here */
+        .product-quality {
+            font-size: var(--font-16px);
+            font-weight: 400;
+            line-height: 2.24rem;
+        }
+    
+        .product-quality b {
+            font-weight: 600;
+        }
+    
+        .product-quality .quality__icon {
+            width: 88px;
+            height: 88px;
+        }
+    
+        .product-quality .quality__bold {
+            font-weight: 700;
+        }
+        /* Product quality ends here */
+        /* Product comments starts here */
+    
+        .product-comments {
+            width: 88%;
+            display: grid;
+            margin-left: calc(10%);
+            margin-top: -60px;
+        }
+    
+        .product-comments .user-info {
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            grid-template-rows: 1;
+    
+            align-items: center;
+        }
+    
+        .product-comments .user-info img {
+            width: 48px;
+            height: 48px;
+    
+            padding-bottom: 10px;
+        }
+    
+        .user-info--container {
+            margin-left: 10px;
+        }
+    
+        .product-comments .user-info .user__stars { 
+            display: block;
+            width: 78.11px;
+            height: 11.95px;
+    
+            background-image: url('../assets/images/Stars.png');
+            background-repeat: no-repeat;
+            background-position: center;
+    
+        }
+    
+        .product-comments .user-info .user__name { 
+            display: inline-block;
+    
+            font-size: var(--font-14px);
+            font-weight: 700;
+            line-height: 1.4rem;
+    
+        }
+    
+        .product-comments .user-info .user__verified { 
+            display: inline-block;
+            width: 126px;
+            height: 16px;
+            margin-left: 10px;
+            color: var(--primary-solid-black);
+    
+            background-image: url('../assets/images/verify.png');
+            background-repeat: no-repeat;
+            background-position: center;
+    
+        }
+    
+        .user-opinion p {
+            font-size: var(--font-16px);
+            font-weight: 400;
+            line-height: 2.4rem;
+        }
+    
+    
+        /* Product comments ends here */
+        /* Product container ends here */
+        /* Footer section styles starts here*/
+    
+        .footer-container {
+            font-size: var(--font-16px);
+            font-weight: 400;
+            line-height: 2.24rem;
+        }
+    
+        .footer-info-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1;
+        }
+    
+        .footer-info-container .right-container .right-icon {
+            width: 13px;
+            height: 13px;
+        }
+    
+        /* Footer section styles ends here*/
+}
+
+
+@media (min-width: 1440px) {
+
+    /*Product container starts here*/
+    
+        /* Product features ends here */
+    
+        .features-stock-price .stock-image img {
+            width: 134px;
+            height: 134px;
+        }
+    
+    
+        .features-main-characteristic {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding-left: calc(27.5% + 10px);
+        }
+    
+        .features-main-characteristic p {
+            font-size: var(--font-16px);
+            line-height: 2.24rem;
+            text-align: start;
+        }
+    
+        /* Product features info ends here */
+    
+        /* Product save money starts here */
+    
+        .save-money-get-discount {
+    
+            text-align: center;
+            font-size: var(--font-20px);
+            font-weight: 700;
+            line-height: 2.732rem;
+    
+        }
+    
+        .save-money-payment {
+            margin: 10px 0;
+        }
+    
+        .save-money-payment .payment-container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        .payment-info {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;  
+        }
+    
+        .payment-info .info__item {
+            border-bottom: none;
+            padding-bottom: 0;
+        } 
+    
+        .payment-cards {
+            grid-column: 3 / 4;
+            grid-row: 1 / 3;
+            place-self: center;
+            margin-top: 5px;
+        }
+    
+        .save-money-reject {
+            padding-top: 15px;
+        }
+    
+        .save-money-reject a {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2.459rem;
+        }
+        /* Product discount info ends here */
+        /* Product comments starts here */
+    
+        .product-comments {
+            width: 88%;
+            display: grid;
+            margin-left: calc(10%);
+            margin-top: -40px;
+        }
+    
+        /* Product comments ends here */
+        /* Product container ends here */
+    }

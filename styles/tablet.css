@@ -1,0 +1,128 @@
+/* Header section styles starts here*/
+.logo-container img {
+    width: 192px;
+    height: 36px;
+}
+
+.partners-container img {
+    width: 88px;
+    height: 32px;
+}
+/* Header section styles starts here*/
+/* Step by step section styles starts here*/
+    
+.step-by-step-container {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.step-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.step-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.step-container p {
+    font-size: var(--font-16px);
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-top: 0;
+}
+
+/* Step by step section styles ends here*/
+
+.features-stock-price {
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.features-stock-price .stock-info .stock-info-name p {
+    font-size: var(--font-24px);
+}
+
+.features-stock-price .stock-prices .normal-price {
+    font-size: var(--font-16px);
+}
+
+.features-stock-price .stock-prices .discount-price {
+    font-size: var(--font-24px);
+}
+
+.features-main-characteristic p {
+    font-size: var(--font-16px);
+    text-align: start;
+}
+
+.features-another-characteristics {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+}
+
+
+.stock-remaining p {
+    font-size: var(--font-16px);
+}
+
+.features-stock-price .stock-info .stock-info-stars img{
+    width: 98px;
+    height: 18px;
+    float: left;
+}
+
+.features-another-characteristics .another__characteristic p {
+    font-size: var(--font-16px);
+    font-weight: 400;
+    line-height: 1.92rem;
+    color: var(--primary-solid-grey);
+    align-self: center;
+}
+
+/* Product features info ends here */
+/* Product save money starts here */
+
+.save-money-info .money-info__icon {
+    width: 48px;
+    height: 48px;
+}
+
+.save-money-info p {
+    font-size: var(--font-20px);
+}
+
+.save-money-get-discount {
+    font-size: var(--font-20px);
+}
+
+
+.save-money-payment .payment-container {       
+    font-size: var(--font-16px);
+}
+
+.save-money-reject a {
+    font-size: var(--font-20px);
+}
+
+/* Product discount info ends here */
+/* Product quality starts here */
+.product-quality {
+    grid-template-columns: 60px 1fr;
+    
+}
+
+.product-quality {
+    font-size: var(--font-16px);
+}
+
+/* Product quality ends here */
